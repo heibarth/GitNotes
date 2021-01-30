@@ -20,20 +20,25 @@ git log > log.txt - guardar los logs en un archivo txt
 
 Para sincronizar un Repositorio Remoto de GitHub a tu repositorio Local en tu Laptop, debes usar el siguiente comando:
 
-git remote origin <URL del repositorio remoto>
+#git remote origin <URL del repositorio remoto>
 
 Ejemplo:
 
-git remote add origin https://github.com/heibarth/<turepositorio>
+#git remote add origin https://github.com/heibarth/<turepositorio>
 
 Luego para subir tu proyecto local ya con el ultimo commit deber primero fucionar los cambios y/o el proyecto que ya tienenes 
 en tu reposito local con el repositorio remoto. Para fusionar y sinclonizar los repositorios se debe ejecutar el siguiente comando:
 
-git pull origin master --allow-unrelated-histories
+#git pull origin master --allow-unrelated-histories
 
 Luego de pulsar enter te solicitara tus credenciales de acceso al repositorio.
 
 Luego de sincronizar nuestro repositorio local y el remoto. Podemos actualizar el repositorio remoto para que quede la misma 
 informacion en los dos repositorios, a traves del siguiente comando:
 
-git push origin master
+#git push origin master
+
+Por otro lado si nosotros vamos a iniciar a trabajar el dia de hoy y se que otra persona del equipo pudo haber hecho alguna 
+actualizacion en el codigo podemos traernos las ultimas actualizaciones del codigo con el comando:
+
+#git pull origin maste
